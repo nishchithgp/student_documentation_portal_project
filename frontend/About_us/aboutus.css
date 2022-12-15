@@ -1,0 +1,161 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 400;
+            font-size: 48px;
+            text-transform: capitalize;
+            letter-spacing: 2%;
+            text-decoration: none;
+        }
+
+        .history-image img{
+            max-width: 500px;
+           
+        }
+        .history-section ,.facility-section{
+            display: flex;
+            padding: 6rem;
+            gap: 5rem;
+        }
+        .facility-section{
+            flex-direction: row-reverse;
+        }
+        .history-section .history-contents .history-title ,.facility-section .facility-contents .facility-title{
+            font-weight: 700;
+            font-size: 30px;
+            padding: 5px;
+            
+        }
+        .history-image{
+            display: flex;
+            justify-content: center;
+        }
+        .history-section .history-contents , .facility-contents{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 29.605px;
+            line-height: 52px;
+            letter-spacing: 0.02em;
+            padding: 5px;
+        }
+        .facility-image {
+            max-width: 500px;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 5px;
+        }
+        .facility-image img{
+            width: 250px;
+            display:inline-block;
+            margin: 0;
+        }
+        .quote-section{
+            background-color: #26BCBC;
+            display: flex;
+            padding: 4rem 6rem ;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            position: relative;
+        }
+        .quote-image-wrap{
+            width: 20rem;
+            aspect-ratio: 1/1;
+            border-radius: 12000px;
+            overflow: hidden;
+            margin: auto;
+        }
+        .quote-image-wrap img{
+            max-width: 100%;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .quote{
+            color:#FFFEFE;
+            font-family: 'Calligraffitti', cursive;
+            font-size: 40px;
+            line-height: 174.2%;
+            letter-spacing: 0.02em;
+        }
+        .quote .q{
+            font-size: 150px;
+            font-family: 'Calligraffitti', cursive;
+            max-height: 20px;
+            position: relative;
+            top: 3rem;
+          }
+          .bottom{
+            color: #832F2F;
+            font-family: 'Arial';
+            font-size: 26px;
+            line-height: 174.2%;
+            letter-spacing: 0.02em;
+            padding: 0 2rem;
+          }
+          @media only screen and (max-width:768px){
+            .title{
+                font-size: 38px;
+            }
+            .history-section, .facility-section, .quote-section{
+                display: block;
+                margin: auto;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                padding: 2rem 0;
+            }
+            
+            .history-section .history-contents, .facility-contents{
+                font-size: 20px;
+            line-height: 130.2%;
+            padding: 1rem;
+
+
+            } 
+            .history-section .history-contents .history-title ,.facility-section .facility-contents .facility-title{
+                padding: 2rem 0;
+            }
+            .facility-image{
+                display: block;
+                margin: auto;
+            }
+            .history-image img{
+                max-width: 100%;
+            }
+            .facility-image img{
+                width: 100%;
+            }
+            .quote-image-wrap{
+                margin: auto;
+                width: 15rem;
+            }
+            .quote-section{
+                padding: 0;
+
+            }
+            .quote-section .quote{
+                padding: 0 2rem;
+            }
+            
+          }
+          @media only screen and (max-width:1006px){
+            
+            .history-section, .facility-section, .quote-section{
+                display: block;
+                margin: auto;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .facility-image, .history-image{
+                margin: auto;
+            }
+           
+          }
